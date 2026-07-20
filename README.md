@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Next.js Todo List Application
 
-## Getting Started
+แอปพลิเคชันจัดการรายการงาน (Todo List) ที่สร้างด้วย **Next.js (App Router)**, **TypeScript** และ **Tailwind CSS** มาพร้อมระบบจัดเก็บข้อมูลบน `localStorage` และอินเทอร์เฟซที่ใช้งานง่าย ทันสมัย
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ ฟีเจอร์หลัก (Features)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* ➕ **เพิ่มรายการงาน:** ระบุหัวข้องานพร้อมกำหนดเวลาส่ง (Due Date) ได้
+* 💾 **บันทึกข้อมูลอัตโนมัติ:** บันทึกข้อมูลลงใน `localStorage` ข้อมูลไม่หายเมื่อรีเฟรชหน้าเว็บ
+* ✅ **จัดการสถานะ:** สลับสถานะระหว่าง "ทำแล้ว" และ "ยังไม่ได้ทำ" (พร้อมเอฟเฟกต์ ขีดฆ่า/สีจาง)
+* 🏷️ **จัดหมวดหมู่ (Filtering):** กรองดูรายการตามหมวดหมู่ได้:
+  * ทั้งหมด (All)
+  * ยังไม่ได้ทำ (Pending)
+  * ทำแล้ว (Completed)
+* ✏️ **แก้ไขและลบ:** แก้ไขชื่อ/วันกำหนดส่ง หรือลบรายการที่ไม่ต้องการได้ทันที
+* 📱 **Responsive Design:** แสดงผลสวยงามทั้งบนมือถือ แท็บเล็ต และคอมพิวเตอร์
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👨‍💻 ผู้จัดทำ (Developer)
+ชื่อ-นามสกุล: นาย ธีรเดช ประสารสุข
 
-## Learn More
+รหัสนักศึกษา: 673450195-4
 
-To learn more about Next.js, take a look at the following resources:
+Email: thiradet.pr@kkumail.com
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+## 📁 โครงสร้างโปรเจกต์ (Project Structure)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+├── app/
+│   ├── _components/
+│   │   └── todoitem.tsx    # Component แสดงผล/จัดการแต่ละรายการ Todo
+│   ├── globals.css         # Custom CSS Classes & Tailwind Configuration
+│   ├── layout.tsx          # Root Layout
+│   └── page.tsx            # หน้าหลักและ Logic การจัดการ State / LocalStorage
+├── types/
+│   └── iTodo.ts            # TypeScript Interface สำหรับโครงสร้างข้อมูล Todo
+├── package.json
+└── README.md
