@@ -16,6 +16,8 @@
   * ทำแล้ว (Completed)
 * ✏️ **แก้ไขและลบ:** แก้ไขชื่อ/วันกำหนดส่ง หรือลบรายการที่ไม่ต้องการได้ทันที
 * 📱 **Responsive Design:** แสดงผลสวยงามทั้งบนมือถือ แท็บเล็ต และคอมพิวเตอร์
+  <img width="1917" height="703" alt="image" src="https://github.com/user-attachments/assets/b777f18a-4cde-4887-8a5b-53365b0dcd7c" />
+
 
 ---
 
